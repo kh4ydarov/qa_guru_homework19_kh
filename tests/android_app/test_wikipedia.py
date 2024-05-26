@@ -19,7 +19,7 @@ def test_search_samsung():
 
     with step('Type search'):
         browser.element((AppiumBy.ACCESSIBILITY_ID, "Search Wikipedia")).click()
-        browser.element((AppiumBy.ID, "org.wikipedia.alpha:id/search_src_text")).type('samsung')
+        browser.element((AppiumBy.ID, "org.wikipedia.alpha:id/search_src_text")).type('Samsung')
 
     with step('Verify content found'):
         results = browser.all((AppiumBy.ID, 'org.wikipedia.alpha:id/page_list_item_title'))
