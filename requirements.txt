@@ -1,0 +1,6 @@
+selene==2.0.0rc9
+appium-python-client
+allure-pytest
+python-dotenv
+requests
+pytest
