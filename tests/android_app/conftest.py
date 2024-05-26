@@ -37,9 +37,10 @@ def mobile_management():
         }
     })
 
-    # browser.config.driver = webdriver.Remote("http://hub.browserstack.com/wd/hub", options=options)
-    browser.config.driver_remote_url = 'http://hub.browserstack.com/wd/hub'
-    browser.config.driver_options = options
+    browser.config.driver = webdriver.Remote(
+        'http://hub.browserstack.com/wd/hub',
+        options=options
+    )
 
     browser.config.timeout = float(os.getenv('timeout', '10.0'))
 
